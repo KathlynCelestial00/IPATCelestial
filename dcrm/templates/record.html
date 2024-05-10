@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="card">
+    <div class="card-header">
+        {{ add_record.first_name}} 
+        {{add_record.last_name}} 
+      Featured
+    </div>
+    <div class="card-body">
+      <p class="card-text">
+        <strong>Email:</strong>{{ add_record.email }} <br/>
+        <strong>Phone:</strong>{{ add_record.phone }}<br/>
+        <strong>Address:</strong>{{ add_record.address }} <br/>
+        <strong>City:</strong>{{ add_record.city }} <br/>
+        <strong>State:</strong>{{ add_record.state }} <br/>
+        <strong>Zip Code:</strong>{{ add_record.zipcode }} <br/>
+        <strong>Created at:</strong>{{ add_record.created_at }} <br/>
+        <strong>Recor Id:</strong>{{add_record.d}} <br/>
+      </p>
+     
+    </div>
+  </div>  
+{% endblock %}
